@@ -1,0 +1,2 @@
+pyuic4 ZigGui.ui -o ziggui.py
+pyrcc4 ZigGui.qrc -o ZigGui_rc.py

@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/new/prefix1" >
+        <file>Icons/Z_logo32x34.jpg</file>
+        <file>Icons/Z_logo32x34.png</file>
+        <file>Icons/address-book-new.png</file>
+        <file>Icons/arcgis_logo.gif</file>
+        <file>Icons/document-new.png</file>
+        <file>Icons/document-open.png</file>
+        <file>Icons/document-save-as.png</file>
+        <file>Icons/document-save.png</file>
+        <file>Icons/edit-copy.png</file>
+        <file>Icons/edit-paste.png</file>
+        <file>Icons/edit-redo.png</file>
+        <file>Icons/edit-undo.png</file>
+        <file>Icons/go-bottom.png</file>
+        <file>Icons/go-down.png</file>
+        <file>Icons/go-top.png</file>
+        <file>Icons/go-up.png</file>
+        <file>Icons/help-browser.png</file>
+        <file>Icons/preferences-system-windows.png</file>
+        <file>Icons/system-log-out.png</file>
+        <file>Icons/system-search.png</file>
+        <file>Icons/system-users.png</file>
+        <file>images/Z_logo.jpg</file>
+        <file>images/chameleon_gui.jpg</file>
+    </qresource>
+</RCC>

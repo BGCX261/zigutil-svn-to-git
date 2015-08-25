@@ -1,0 +1,1132 @@
+<ui version="4.0" >
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow" >
+  <property name="geometry" >
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>866</width>
+    <height>798</height>
+   </rect>
+  </property>
+  <property name="minimumSize" >
+   <size>
+    <width>816</width>
+    <height>716</height>
+   </size>
+  </property>
+  <property name="maximumSize" >
+   <size>
+    <width>10000</width>
+    <height>10000</height>
+   </size>
+  </property>
+  <property name="windowTitle" >
+   <string>ZigHelper</string>
+  </property>
+  <property name="windowIcon" >
+   <iconset resource="ZigGui.qrc" >
+    <normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>26</y>
+     <width>866</width>
+     <height>737</height>
+    </rect>
+   </property>
+   <widget class="QTabWidget" name="tabWidget" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>50</y>
+      <width>851</width>
+      <height>681</height>
+     </rect>
+    </property>
+    <property name="currentIndex" >
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>839</width>
+       <height>642</height>
+      </rect>
+     </property>
+     <attribute name="title" >
+      <string>Zonation input</string>
+     </attribute>
+     <widget class="QWidget" name="horizontalLayout" >
+      <property name="geometry" >
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>811</width>
+        <height>631</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" >
+       <item>
+        <widget class="QTreeWidget" name="contenttree" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Expanding" hsizetype="Minimum" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor" stdset="0" >
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="styleSheet" >
+          <string notr="true" />
+         </property>
+         <property name="alternatingRowColors" >
+          <bool>true</bool>
+         </property>
+         <property name="selectionBehavior" >
+          <enum>QAbstractItemView::SelectItems</enum>
+         </property>
+         <property name="animated" >
+          <bool>true</bool>
+         </property>
+         <property name="columnCount" >
+          <number>2</number>
+         </property>
+         <column>
+          <property name="text" >
+           <string>Parameter</string>
+          </property>
+         </column>
+         <column>
+          <property name="text" >
+           <string>Value</string>
+          </property>
+         </column>
+         <item>
+          <property name="text" >
+           <string>Input parameters</string>
+          </property>
+          <property name="text" >
+           <string/>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item>
+        <layout class="QGridLayout" >
+         <item row="1" column="0" >
+          <widget class="QPushButton" name="pushButton" >
+           <property name="toolTip" >
+            <string>Go to first layer</string>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset resource="ZigGui.qrc" >
+             <normaloff>:/new/prefix1/Icons/go-top.png</normaloff>:/new/prefix1/Icons/go-top.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0" >
+          <widget class="QPushButton" name="pushButton_2" >
+           <property name="toolTip" >
+            <string>Go to previous layer</string>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset resource="ZigGui.qrc" >
+             <normaloff>:/new/prefix1/Icons/go-up.png</normaloff>:/new/prefix1/Icons/go-up.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0" >
+          <widget class="QPushButton" name="pushButton_3" >
+           <property name="toolTip" >
+            <string>Go to next layer</string>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset resource="ZigGui.qrc" >
+             <normaloff>:/new/prefix1/Icons/go-down.png</normaloff>:/new/prefix1/Icons/go-down.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0" >
+          <widget class="QPushButton" name="pushButton_4" >
+           <property name="toolTip" >
+            <string>Go to last layer</string>
+           </property>
+           <property name="text" >
+            <string/>
+           </property>
+           <property name="icon" >
+            <iconset resource="ZigGui.qrc" >
+             <normaloff>:/new/prefix1/Icons/go-bottom.png</normaloff>:/new/prefix1/Icons/go-bottom.png</iconset>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" >
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="5" column="0" >
+          <spacer>
+           <property name="orientation" >
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0" >
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QGroupBox" name="groupBox" >
+         <property name="sizePolicy" >
+          <sizepolicy vsizetype="Preferred" hsizetype="Expanding" >
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="title" >
+          <string>Edit input configuration</string>
+         </property>
+         <widget class="QWidget" name="layoutWidget" >
+          <property name="geometry" >
+           <rect>
+            <x>12</x>
+            <y>29</y>
+            <width>461</width>
+            <height>531</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" >
+           <item>
+            <widget class="QLabel" name="label" >
+             <property name="font" >
+              <font>
+               <weight>50</weight>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text" >
+              <string>Weight</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QDoubleSpinBox" name="spbxweight" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="decimals" >
+                <number>1</number>
+               </property>
+               <property name="maximum" >
+                <double>1000.000000000000000</double>
+               </property>
+               <property name="singleStep" >
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value" >
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" >
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="4" >
+              <widget class="QToolButton" name="toolButton" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_2" >
+             <property name="font" >
+              <font>
+               <pointsize>9</pointsize>
+              </font>
+             </property>
+             <property name="text" >
+              <string>Alpha</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_2" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="decimals" >
+                <number>1</number>
+               </property>
+               <property name="maximum" >
+                <double>1000.000000000000000</double>
+               </property>
+               <property name="singleStep" >
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value" >
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <widget class="QPushButton" name="pushButton_11" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text" >
+                <string>Calculate alpha</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" >
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="4" >
+              <widget class="QToolButton" name="toolButton_2" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3" >
+             <property name="text" >
+              <string>BQP penalty / NQP upstream</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QSpinBox" name="spinBox" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximum" >
+                <number>1000</number>
+               </property>
+               <property name="value" >
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <widget class="QPushButton" name="pushButton_12" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text" >
+                <string>Validate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" >
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="4" >
+              <widget class="QToolButton" name="toolButton_3" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_4" >
+             <property name="text" >
+              <string>BQP buffer / NQP downstream</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QSpinBox" name="spinBox_2" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="maximum" >
+                <number>1000</number>
+               </property>
+               <property name="value" >
+                <number>1</number>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <widget class="QPushButton" name="pushButton_14" >
+               <property name="sizePolicy" >
+                <sizepolicy vsizetype="Fixed" hsizetype="MinimumExpanding" >
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="text" >
+                <string>Validate</string>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="3" >
+              <spacer>
+               <property name="orientation" >
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0" >
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item row="0" column="4" >
+              <widget class="QToolButton" name="toolButton_6" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_5" >
+             <property name="text" >
+              <string>Cell removal rule</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QGridLayout" >
+             <item row="0" column="0" >
+              <widget class="QDoubleSpinBox" name="doubleSpinBox_3" >
+               <property name="decimals" >
+                <number>1</number>
+               </property>
+               <property name="maximum" >
+                <double>1000.000000000000000</double>
+               </property>
+               <property name="singleStep" >
+                <double>0.100000000000000</double>
+               </property>
+               <property name="value" >
+                <double>1.000000000000000</double>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1" >
+              <widget class="QComboBox" name="comboBox" >
+               <property name="font" >
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <item>
+                <property name="text" >
+                 <string>Core area zonation</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>Additive benefit function</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>Target-based planning</string>
+                </property>
+               </item>
+               <item>
+                <property name="text" >
+                 <string>Generalized benefit function</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+             <item row="0" column="2" >
+              <widget class="QToolButton" name="toolButton_5" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_6" >
+             <property name="text" >
+              <string>Species distribution map</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" >
+             <item>
+              <widget class="QLineEdit" name="lineEdit" />
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_13" >
+               <property name="text" >
+                <string>Browse...</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QToolButton" name="toolButton_7" >
+               <property name="text" >
+                <string>...</string>
+               </property>
+               <property name="icon" >
+                <iconset resource="ZigGui.qrc" >
+                 <normaloff>:/new/prefix1/Icons/help-browser.png</normaloff>:/new/prefix1/Icons/help-browser.png</iconset>
+               </property>
+               <property name="iconSize" >
+                <size>
+                 <width>20</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_7" >
+             <property name="text" >
+              <string>Meta data</string>
+             </property>
+             <property name="wordWrap" >
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="textEdit" />
+           </item>
+          </layout>
+         </widget>
+         <widget class="QWidget" name="horizontalLayout_2" >
+          <property name="geometry" >
+           <rect>
+            <x>200</x>
+            <y>570</y>
+            <width>271</width>
+            <height>51</height>
+           </rect>
+          </property>
+          <layout class="QHBoxLayout" >
+           <item>
+            <widget class="QPushButton" name="pushButton_15" >
+             <property name="text" >
+              <string>Discard</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_16" >
+             <property name="text" >
+              <string>Save</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>839</width>
+       <height>642</height>
+      </rect>
+     </property>
+     <attribute name="title" >
+      <string>Zonation run settings</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3" >
+     <property name="geometry" >
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>839</width>
+       <height>642</height>
+      </rect>
+     </property>
+     <attribute name="title" >
+      <string>Result explorer</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="gridLayout_2" >
+    <property name="geometry" >
+     <rect>
+      <x>10</x>
+      <y>1</y>
+      <width>931</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" >
+     <property name="horizontalSpacing" >
+      <number>6</number>
+     </property>
+     <property name="verticalSpacing" >
+      <number>0</number>
+     </property>
+     <item row="0" column="2" >
+      <widget class="QPushButton" name="pushButton_6" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Save</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/document-save.png</normaloff>:/new/prefix1/Icons/document-save.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1" >
+      <widget class="QPushButton" name="pushButton_7" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Open</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/document-open.png</normaloff>:/new/prefix1/Icons/document-open.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" >
+      <widget class="QPushButton" name="pushButton_8" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>New</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/document-new.png</normaloff>:/new/prefix1/Icons/document-new.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="8" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="4" >
+      <widget class="QPushButton" name="pushButton_5" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Revert</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/edit-undo.png</normaloff>:/new/prefix1/Icons/edit-undo.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5" >
+      <widget class="QPushButton" name="pushButton_9" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Fixed" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Apply</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/edit-redo.png</normaloff>:/new/prefix1/Icons/edit-redo.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="3" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="0" column="7" >
+      <widget class="QPushButton" name="pushButton_10" >
+       <property name="sizePolicy" >
+        <sizepolicy vsizetype="Fixed" hsizetype="Preferred" >
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="toolTip" >
+        <string>Start Zonation</string>
+       </property>
+       <property name="text" >
+        <string/>
+       </property>
+       <property name="icon" >
+        <iconset resource="ZigGui.qrc" >
+         <normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</iconset>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6" >
+      <spacer>
+       <property name="orientation" >
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeType" >
+        <enum>QSizePolicy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0" >
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>866</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile" >
+    <property name="title" >
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuNew" >
+     <property name="title" >
+      <string>New</string>
+     </property>
+     <addaction name="separator" />
+     <addaction name="actionElement" />
+    </widget>
+    <addaction name="menuNew" />
+    <addaction name="actionOpen" />
+    <addaction name="actionSave" />
+    <addaction name="actionSave_as" />
+    <addaction name="separator" />
+    <addaction name="actionExit" />
+   </widget>
+   <widget class="QMenu" name="menuHelp" >
+    <property name="title" >
+     <string>Help</string>
+    </property>
+    <addaction name="actionHelp" />
+    <addaction name="separator" />
+    <addaction name="actionAbout" />
+   </widget>
+   <widget class="QMenu" name="menuTools" >
+    <property name="title" >
+     <string>Tools</string>
+    </property>
+    <addaction name="actionArcHelper" />
+    <addaction name="actionXYZ_converter" />
+    <addaction name="actionVisualize" />
+    <addaction name="separator" />
+    <addaction name="actionPreferences" />
+   </widget>
+   <widget class="QMenu" name="menuRun" >
+    <property name="title" >
+     <string>Run</string>
+    </property>
+    <addaction name="actionRun" />
+    <addaction name="actionRun_current" />
+    <addaction name="actionCreate_batch" />
+   </widget>
+   <addaction name="menuFile" />
+   <addaction name="menuTools" />
+   <addaction name="menuRun" />
+   <addaction name="menuHelp" />
+  </widget>
+  <widget class="QStatusBar" name="statusbar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>775</y>
+     <width>866</width>
+     <height>23</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="toolBar" >
+   <property name="geometry" >
+    <rect>
+     <x>0</x>
+     <y>763</y>
+     <width>866</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="windowTitle" >
+    <string>toolBar</string>
+   </property>
+   <property name="windowIcon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</normaloff>:/new/prefix1/Icons/Z_logo32x34.jpg</iconset>
+   </property>
+   <attribute name="toolBarArea" >
+    <enum>BottomToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak" >
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <action name="actionOpen" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/document-open.png</normaloff>:/new/prefix1/Icons/document-open.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Open</string>
+   </property>
+  </action>
+  <action name="actionSave" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/document-save.png</normaloff>:/new/prefix1/Icons/document-save.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionSave_as" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/document-save-as.png</normaloff>:/new/prefix1/Icons/document-save-as.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Save as...</string>
+   </property>
+  </action>
+  <action name="actionExit" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/system-log-out.png</normaloff>:/new/prefix1/Icons/system-log-out.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Exit</string>
+   </property>
+   <property name="menuRole" >
+    <enum>QAction::QuitRole</enum>
+   </property>
+  </action>
+  <action name="actionHelp" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/address-book-new.png</normaloff>:/new/prefix1/Icons/address-book-new.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Help</string>
+   </property>
+  </action>
+  <action name="actionAbout" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/system-users.png</normaloff>:/new/prefix1/Icons/system-users.png</iconset>
+   </property>
+   <property name="text" >
+    <string>About</string>
+   </property>
+  </action>
+  <action name="actionPreferences" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/preferences-system-windows.png</normaloff>:/new/prefix1/Icons/preferences-system-windows.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Preferences</string>
+   </property>
+  </action>
+  <action name="actionXYZ_converter" >
+   <property name="text" >
+    <string>XYZ converter</string>
+   </property>
+  </action>
+  <action name="actionArcHelper" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/arcgis_logo.gif</normaloff>:/new/prefix1/Icons/arcgis_logo.gif</iconset>
+   </property>
+   <property name="text" >
+    <string>ArcHelper</string>
+   </property>
+  </action>
+  <action name="actionElement" >
+   <property name="text" >
+    <string>Element</string>
+   </property>
+  </action>
+  <action name="actionVisualize" >
+   <property name="icon" >
+    <iconset resource="ZigGui.qrc" >
+     <normaloff>:/new/prefix1/Icons/system-search.png</normaloff>:/new/prefix1/Icons/system-search.png</iconset>
+   </property>
+   <property name="text" >
+    <string>Visualize...</string>
+   </property>
+  </action>
+  <action name="actionRun" >
+   <property name="text" >
+    <string>Run...</string>
+   </property>
+  </action>
+  <action name="actionRun_current" >
+   <property name="text" >
+    <string>Run current</string>
+   </property>
+  </action>
+  <action name="actionCreate_batch" >
+   <property name="text" >
+    <string>Create batch</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="ZigGui.qrc" />
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel" >
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel" >
+     <x>407</x>
+     <y>357</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
